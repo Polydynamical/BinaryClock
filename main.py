@@ -26,10 +26,6 @@ def decimal_to_binary(number):
 window_width = 1920
 window_height = 1080
 
-hours_bin = "000011"
-mins_bin = "001011"
-secs_bin = "011001"
-
 # Circle Geometry
 width = 80
 x_spacing = 200
@@ -41,6 +37,7 @@ y_start = (window_height - 6 * (y_spacing)) // 2
 # GUI
 window = Tk()
 window.geometry(f"{window_width}x{window_height}")
+
 def clock():
     
     # Time Processing
@@ -84,7 +81,3 @@ c = Canvas(window, width=window_width, height=window_height)
 c.pack()
 clock()
 window.mainloop()
-
-# self.state = on
-# self.state = off
-# tk.update()
